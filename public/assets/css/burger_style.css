@@ -1,13 +1,21 @@
 body {
     background-color: #ffcf00;
 }
- #logo {
+
+#logo {
     height: 100%;
-    width: 400px;
+    width: 320px;
 }
- h2 {
+
+h1 {
+    font-family: 'Titan One', cursive;
+    padding-bottom: 16px
+}
+
+h2 {
     text-align: center;
 }
- .available, .eaten {
+
+.available, .eaten {
     margin-bottom: 8px;
 } 
