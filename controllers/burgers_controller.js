@@ -1,11 +1,11 @@
-var express = require("express");
-var burgerAction = require("../models/burger.js");
+let express = require("express");
+let burgerAction = require("../models/burger.js");
 
-var router = express.Router();
+let router = express.Router();
 
 router.get("/", function (req, res) {
     burgerAction.all(function (data) {
-        var burgerhbs = {
+        let burgerhbs = {
             burger: data.burger_name
         };
         console.log(burgerhbs);
