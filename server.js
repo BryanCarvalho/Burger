@@ -1,4 +1,4 @@
-var express = require("express");
-var bodyParser = require("body-parser");
+let express = require("express");
+let bodyParser = require("body-parser");
 
-var PORT = process.env.PORT || 8080;
+let PORT = process.env.PORT || 8080;
