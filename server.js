@@ -1,17 +1,18 @@
-
 let express = require("express");
 let bodyParser = require("body-parser");
+let methodOverride = require('method-override');
 
 let PORT = process.env.PORT || 8080;
 
 let app = express();
 
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(methodOverride('_method'));
 
 // Import handlebars
 let exphbs = require("express-handlebars");
+
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
